@@ -1,10 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\simon\\source\\repos\\OS - 2\\",
+  "WorkspaceRootPath": "C:\\Users\\simon\\OneDrive\\Desktop\\University-Tasks-Semester-4\\OS\\OS - 2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BE322774-2FF8-4D06-9244-65C0DDA0D8BC}|OS - 2\\OS - 2.vcxproj|C:\\Users\\simon\\source\\repos\\OS - 2\\OS - 2\\Task1.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{BE322774-2FF8-4D06-9244-65C0DDA0D8BC}|OS - 2\\OS - 2.vcxproj|solutionrelative:OS - 2\\Task1.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{B2F3F5FD-133D-4A90-A22B-B3882BB811FC}|Task3\\Task3.vcxproj|C:\\Users\\simon\\OneDrive\\Desktop\\University-Tasks-Semester-4\\OS\\OS - 2\\Task3\\Task3.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B2F3F5FD-133D-4A90-A22B-B3882BB811FC}|Task3\\Task3.vcxproj|solutionrelative:Task3\\Task3.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D242AECB-4F99-4B9A-9488-56AC8092C720}|Task.2\\Task.2.vcxproj|C:\\Users\\simon\\OneDrive\\Desktop\\University-Tasks-Semester-4\\OS\\OS - 2\\Task.2\\Task.2.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D242AECB-4F99-4B9A-9488-56AC8092C720}|Task.2\\Task.2.vcxproj|solutionrelative:Task.2\\Task.2.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +23,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Task1.c",
-              "DocumentMoniker": "C:\\Users\\simon\\source\\repos\\OS - 2\\OS - 2\\Task1.c",
-              "RelativeDocumentMoniker": "OS - 2\\Task1.c",
-              "ToolTip": "C:\\Users\\simon\\source\\repos\\OS - 2\\OS - 2\\Task1.c",
-              "RelativeToolTip": "OS - 2\\Task1.c",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Title": "Task3.c",
+              "DocumentMoniker": "C:\\Users\\simon\\OneDrive\\Desktop\\University-Tasks-Semester-4\\OS\\OS - 2\\Task3\\Task3.c",
+              "RelativeDocumentMoniker": "Task3\\Task3.c",
+              "ToolTip": "C:\\Users\\simon\\OneDrive\\Desktop\\University-Tasks-Semester-4\\OS\\OS - 2\\Task3\\Task3.c",
+              "RelativeToolTip": "Task3\\Task3.c",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2026-03-06T10:45:37.043Z",
+              "WhenOpened": "2026-03-06T11:24:28.197Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Task.2.c",
+              "DocumentMoniker": "C:\\Users\\simon\\OneDrive\\Desktop\\University-Tasks-Semester-4\\OS\\OS - 2\\Task.2\\Task.2.c",
+              "RelativeDocumentMoniker": "Task.2\\Task.2.c",
+              "ToolTip": "C:\\Users\\simon\\OneDrive\\Desktop\\University-Tasks-Semester-4\\OS\\OS - 2\\Task.2\\Task.2.c",
+              "RelativeToolTip": "Task.2\\Task.2.c",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2026-03-06T11:04:15.407Z",
               "EditorCaption": ""
             }
           ]
