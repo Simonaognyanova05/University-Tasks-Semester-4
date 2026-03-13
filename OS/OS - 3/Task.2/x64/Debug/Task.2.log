@@ -1,0 +1,19 @@
+﻿  Task.2.c
+C:\Users\simon\source\repos\OS - 3\Task.2\Task.2.c(30,5): warning C4013: 'pthread_exit' undefined; assuming extern returning int
+C:\Users\simon\source\repos\OS - 3\Task.2\Task.2.c(34,5): error C2084: function 'int main()' already has a body
+      C:\Users\simon\source\repos\OS - 3\Task.2\Task.2.c(11,5):
+      see previous definition of 'main'
+  
+C:\Users\simon\source\repos\OS - 3\Task.2\Task.2.c(35,5): error C2065: 'pthread_t': undeclared identifier
+C:\Users\simon\source\repos\OS - 3\Task.2\Task.2.c(35,15): error C2146: syntax error: missing ';' before identifier 'threads'
+C:\Users\simon\source\repos\OS - 3\Task.2\Task.2.c(35,15): error C2065: 'threads': undeclared identifier
+C:\Users\simon\source\repos\OS - 3\Task.2\Task.2.c(35,23): error C2065: 'NUM_THREADS': undeclared identifier
+C:\Users\simon\source\repos\OS - 3\Task.2\Task.2.c(35,22): error C2109: subscript requires array or pointer type
+C:\Users\simon\source\repos\OS - 3\Task.2\Task.2.c(38,25): error C2065: 'NUM_THREADS': undeclared identifier
+C:\Users\simon\source\repos\OS - 3\Task.2\Task.2.c(45,14): warning C4013: 'pthread_create' undefined; assuming extern returning int
+C:\Users\simon\source\repos\OS - 3\Task.2\Task.2.c(45,30): error C2065: 'threads': undeclared identifier
+C:\Users\simon\source\repos\OS - 3\Task.2\Task.2.c(45,37): error C2109: subscript requires array or pointer type
+C:\Users\simon\source\repos\OS - 3\Task.2\Task.2.c(54,25): error C2065: 'NUM_THREADS': undeclared identifier
+C:\Users\simon\source\repos\OS - 3\Task.2\Task.2.c(55,9): warning C4013: 'pthread_join' undefined; assuming extern returning int
+C:\Users\simon\source\repos\OS - 3\Task.2\Task.2.c(55,22): error C2065: 'threads': undeclared identifier
+C:\Users\simon\source\repos\OS - 3\Task.2\Task.2.c(55,29): error C2109: subscript requires array or pointer type

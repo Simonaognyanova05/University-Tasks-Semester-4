@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\simon\\source\\repos\\OS - 3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D4176292-EEBB-4A03-ABAD-CE232FD2C912}|Task. 3\\Task. 3.vcxproj|C:\\Users\\simon\\source\\repos\\OS - 3\\Task. 3\\Task.3.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D4176292-EEBB-4A03-ABAD-CE232FD2C912}|Task. 3\\Task. 3.vcxproj|solutionrelative:Task. 3\\Task.3.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5EF951E8-836F-4C7A-9D03-7100E9F502F6}|Task.2\\Task.2.vcxproj|C:\\Users\\simon\\source\\repos\\OS - 3\\Task.2\\Task.2.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5EF951E8-836F-4C7A-9D03-7100E9F502F6}|Task.2\\Task.2.vcxproj|solutionrelative:Task.2\\Task.2.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCFAE319-06AB-4BC2-832E-47D54BE04395}|OS - 3\\OS - 3.vcxproj|C:\\Users\\simon\\source\\repos\\OS - 3\\OS - 3\\Task1.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DCFAE319-06AB-4BC2-832E-47D54BE04395}|OS - 3\\OS - 3.vcxproj|solutionrelative:OS - 3\\Task1.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Task.3.c",
+              "DocumentMoniker": "C:\\Users\\simon\\source\\repos\\OS - 3\\Task. 3\\Task.3.c",
+              "RelativeDocumentMoniker": "Task. 3\\Task.3.c",
+              "ToolTip": "C:\\Users\\simon\\source\\repos\\OS - 3\\Task. 3\\Task.3.c",
+              "RelativeToolTip": "Task. 3\\Task.3.c",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAEwB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2026-03-13T12:01:33.949Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Task.2.c",
+              "DocumentMoniker": "C:\\Users\\simon\\source\\repos\\OS - 3\\Task.2\\Task.2.c",
+              "RelativeDocumentMoniker": "Task.2\\Task.2.c",
+              "ToolTip": "C:\\Users\\simon\\source\\repos\\OS - 3\\Task.2\\Task.2.c",
+              "RelativeToolTip": "Task.2\\Task.2.c",
+              "ViewState": "AgIAACgAAAAAAAAAAAAQwC0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2026-03-13T11:59:08.168Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Task1.c",
+              "DocumentMoniker": "C:\\Users\\simon\\source\\repos\\OS - 3\\OS - 3\\Task1.c",
+              "RelativeDocumentMoniker": "OS - 3\\Task1.c",
+              "ToolTip": "C:\\Users\\simon\\source\\repos\\OS - 3\\OS - 3\\Task1.c",
+              "RelativeToolTip": "OS - 3\\Task1.c",
+              "ViewState": "AgIAACwAAAAAAAAAAAAtwDcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2026-03-13T11:55:32.073Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
