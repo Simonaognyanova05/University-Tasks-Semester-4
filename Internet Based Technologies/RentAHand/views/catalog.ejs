@@ -9,36 +9,113 @@
 
     <%- include('./partials/navbar.ejs') %>
 
-
         <section class="page">
 
-            <h1>Каталог услуги</h1>
+            <h1 class="page-title">Каталог услуги</h1>
+
+            <div class="catalog-controls">
+
+                <input type="text" placeholder="Търси услуга..." class="search">
+
+                <select class="filter">
+                    <option>Всички категории</option>
+                    <option>Ремонти</option>
+                    <option>Дизайн</option>
+                    <option>IT услуги</option>
+                    <option>Уроци</option>
+                </select>
+
+            </div>
 
             <div class="services">
 
                 <div class="card">
-                    <h3>Уеб дизайн</h3>
-                    <p>40 лв</p>
+
+                    <div class="card-header">
+                        <h3>Уеб дизайн</h3>
+                        <span class="price">40 лв</span>
+                    </div>
+
+                    <p class="description">
+                        Изработка на модерен уебсайт или редизайн на съществуващ.
+                    </p>
+
+                    <div class="meta">
+                        <span>⭐ 4.8</span>
+                        <span>📍 София</span>
+                    </div>
+
+                    <button class="btn small">Виж повече</button>
+
                 </div>
 
-                <div class="card">
-                    <h3>Ремонт на лаптоп</h3>
-                    <p>30 лв</p>
-                </div>
 
                 <div class="card">
-                    <h3>Уроци по математика</h3>
-                    <p>25 лв</p>
+
+                    <div class="card-header">
+                        <h3>Ремонт на лаптоп</h3>
+                        <span class="price">30 лв</span>
+                    </div>
+
+                    <p class="description">
+                        Диагностика, почистване и ремонт на лаптопи.
+                    </p>
+
+                    <div class="meta">
+                        <span>⭐ 4.6</span>
+                        <span>📍 Пловдив</span>
+                    </div>
+
+                    <button class="btn small">Виж повече</button>
+
                 </div>
 
+
                 <div class="card">
-                    <h3>Photoshop дизайн</h3>
-                    <p>35 лв</p>
+
+                    <div class="card-header">
+                        <h3>Уроци по математика</h3>
+                        <span class="price">25 лв</span>
+                    </div>
+
+                    <p class="description">
+                        Подготовка за изпити и помощ с домашни.
+                    </p>
+
+                    <div class="meta">
+                        <span>⭐ 5.0</span>
+                        <span>📍 Онлайн</span>
+                    </div>
+
+                    <button class="btn small">Виж повече</button>
+
+                </div>
+
+
+                <div class="card">
+
+                    <div class="card-header">
+                        <h3>Photoshop дизайн</h3>
+                        <span class="price">35 лв</span>
+                    </div>
+
+                    <p class="description">
+                        Лого, банери и социални медии дизайн.
+                    </p>
+
+                    <div class="meta">
+                        <span>⭐ 4.9</span>
+                        <span>📍 Варна</span>
+                    </div>
+
+                    <button class="btn small">Виж повече</button>
+
                 </div>
 
             </div>
 
         </section>
+
         <%- include('./partials/footer.ejs') %>
 
 </body>

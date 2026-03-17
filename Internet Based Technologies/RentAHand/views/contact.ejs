@@ -3,29 +3,74 @@
 
 <head>
     <%- include('./partials/header.ejs') %>
-
 </head>
 
 <body>
+
     <%- include('./partials/navbar.ejs') %>
 
-        <section class="form-page">
+        <section class="contact-page">
 
-            <h1>Контакти</h1>
+            <h1 class="page-title">Свържи се с нас</h1>
 
-            <form>
+            <div class="contact-container">
 
-                <input type="text" placeholder="Име">
+                <div class="contact-info">
 
-                <input type="email" placeholder="Имейл">
+                    <h2>Контактна информация</h2>
 
-                <textarea placeholder="Съобщение"></textarea>
+                    <div class="info-item">
+                        <span>📍</span>
+                        <p>София, България</p>
+                    </div>
 
-                <button class="btn">Изпрати</button>
+                    <div class="info-item">
+                        <span>📞</span>
+                        <p>+359 888 123 456</p>
+                    </div>
 
-            </form>
+                    <div class="info-item">
+                        <span>📧</span>
+                        <p>contact@renthand.com</p>
+                    </div>
+
+                    <div class="info-item">
+                        <span>🕐</span>
+                        <p>Понеделник - Петък / 09:00 - 18:00</p>
+                    </div>
+
+                    <div class="socials">
+                        <a href="#">🌐</a>
+                        <a href="#">📘</a>
+                        <a href="#">📷</a>
+                        <a href="#">🐦</a>
+                    </div>
+
+                </div>
+
+
+                <div class="contact-form">
+
+                    <h2>Изпрати съобщение</h2>
+
+                    <form>
+
+                        <input type="text" placeholder="Име" required>
+
+                        <input type="email" placeholder="Имейл" required>
+
+                        <textarea placeholder="Съобщение" rows="5"></textarea>
+
+                        <button class="btn">Изпрати съобщението</button>
+
+                    </form>
+
+                </div>
+
+            </div>
 
         </section>
+
         <%- include('./partials/footer.ejs') %>
 
 </body>
