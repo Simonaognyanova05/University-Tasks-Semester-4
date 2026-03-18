@@ -7,21 +7,27 @@
     <body>
         <%- include('./partials/nav.ejs') %>
             <div class="blog-content">
-                <h2>All Blogs</h2>
+                <h2>All services</h2>
 
-                <% if(blogs.length> 0 ) { %>
-                    <% blogs.forEach(blog=> { %>
+                <% if(services.length> 0 ) { %>
+                    <% services.forEach(service=> { %>
                         <h1>
-                            <%= blog.title %>
+                            <%= service.title %>
                         </h1>
                         <p>
-                            <%= blog.snippet %>
+                            <%= service.descritpion %>
+                        </p>
+                        <p>
+                            <%= service.location %>
+                        </p>
+                        <p>
+                            <%= service.price %>
                         </p>
 
                         <% }) %>
                             <% } else {%>
 
-                                <p>No blogs yet</p>
+                                <p>No services yet</p>
                                 <% } %>
                                     <%- include('./partials/footer.ejs') %>
 
