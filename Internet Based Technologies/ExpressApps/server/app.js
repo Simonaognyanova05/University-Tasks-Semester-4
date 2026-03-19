@@ -91,7 +91,19 @@ app.get('/catalog/:id', (req, res) => {
         .catch(err => {
             console.log(err);
         })
-})
+});
+
+app.delete('/catalog/:id', (req, res) => {
+    const id = req.params.id;
+
+    Service.findByIdAndDelete(id)
+        .then(result => {
+            res.json({ redirect: '/catalog' });
+        })
+        .catch(err => {
+            console.log(err);
+        })
+});
 
 app.get('/about', (req, res) => {
     res.render('about', { title: 'About Us' });

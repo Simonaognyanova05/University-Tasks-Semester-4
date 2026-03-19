@@ -7,16 +7,33 @@
     <body>
         <%- include('./partials/nav.ejs') %>
 
-        <div>
-            <h1>Details product</h1>
-            <p><%= service.title %></p>
-            <p><%= service.description %></p>
-
-        </div>
+            <div>
+                <h1>Details product</h1>
+                <p>
+                    <%= service.title %>
+                </p>
+                <p>
+                    <%= service.description %>
+                </p>
+                <a class="delete" data-doc="<%= service._id %>">Delete</a>
+            </div>
 
             <%- include('./partials/footer.ejs') %>
 
+                <script>
+                    const trashkan = document.querySelector('a.delete');
 
+                    trashkan.addEventListener('click', (e) => {
+                        const endpoint = `/catalog/${trashkan.dataset.doc}`;
+
+                        fetch(endpoint, {
+                            method: 'DELETE'
+                        })
+                            .then((response) => response.json())
+                            .then((data) => window.location.href = data.redirect)
+                            .catch(err => console.log(err))
+                    })
+                </script>
     </body>
 
 </html>
