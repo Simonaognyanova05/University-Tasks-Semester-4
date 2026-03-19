@@ -8,14 +8,19 @@
         <%- include('./partials/nav.ejs') %>
 
             <div class="about-content">
-                <form action="">
-                    <label for="title">Blog title: </label>
-                    <input type="text" id="title" required>
-                    <label for="snippet">Blog snippet: </label>
-                    <input type="text" id="snippet" required>
-                    <label for="body">Blog body: </label>
-                    <textarea id="body" required></textarea>
-                    <button>Submit</button>
+
+                <form action="/services" method="POST">
+
+                    <input type="text" placeholder="Заглавие на услугата" name="title" required>
+
+                    <textarea placeholder="Описание" name="description"></textarea>
+
+                    <input type="number" placeholder="Цена" name="price">
+                    <input type="text" placeholder="Местоположение" name="location">
+
+
+                    <button class="btn">Публикувай</button>
+
                 </form>
             </div>
             <%- include('./partials/footer.ejs') %>

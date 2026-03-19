@@ -14,14 +14,14 @@
 
             <h1>Качи услуга</h1>
 
-            <form>
+            <form action="/catalog" method="POST">
 
-                <input type="text" placeholder="Име на услугата" required>
+                <input type="text" placeholder="Заглавие на услугата" name="title" required>
 
-                <textarea placeholder="Описание"></textarea>
+                <textarea placeholder="Описание" name="description"></textarea>
 
-                <input type="number" placeholder="Цена">
-                <input type="text" placeholder="Местоположение">
+                <input type="number" placeholder="Цена" name="price">
+                <input type="text" placeholder="Местоположение" name="location">
 
 
                 <button class="btn">Публикувай</button>

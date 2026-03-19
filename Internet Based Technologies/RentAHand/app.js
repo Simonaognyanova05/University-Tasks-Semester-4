@@ -1,6 +1,12 @@
 const express = require('express');
+const mongoose = require('mongoose');
+const Service = require('./models/service')
 
 const app = express();
+
+const dbURL = 'mongodb+srv://SimonaOgnyanova:123Simona2005@rent-hand.fcxtivy.mongodb.net/';
+mongoose.connect(dbURL);
+
 
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
@@ -16,7 +22,13 @@ app.get('/about', (req, res) => {
 });
 
 app.get('/catalog', (req, res) => {
-    res.render('catalog', { title: 'Catalog page' });
+    Service.find().sort({ createdAt: -1 })
+        .then(result => {
+            res.render('catalog', { title: 'Catalog page', services: result });
+        })
+        .catch(err => {
+            console.log(err);
+        })
 });
 
 app.get('/contact', (req, res) => {

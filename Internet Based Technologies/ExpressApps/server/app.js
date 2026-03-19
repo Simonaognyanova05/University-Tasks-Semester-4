@@ -13,6 +13,7 @@ mongoose.connect(dbURL)
     })
 
 app.set('view engine', 'ejs');
+app.use(express.urlencoded({ extanded: true }));
 app.use(express.static('public'));
 
 
@@ -59,14 +60,26 @@ app.get('/', (req, res) => {
 });
 
 app.get('/services', (req, res) => {
-    Service.find().sort({createdAt: -1})
-    .then(result => {
-        res.render('index', {title: 'Services', services: result});
-    })
-    .catch(err => {
-        console.log(err);
-    })
-})
+    Service.find().sort({ createdAt: -1 })
+        .then(result => {
+            res.render('index', { title: 'Services', services: result });
+        })
+        .catch(err => {
+            console.log(err);
+        })
+});
+
+app.post('/services', (req, res) => {
+    const service = new Service(req.body);
+
+    service.save()
+        .then(result => {
+            res.redirect('/services');
+        })
+        .catch(err => {
+            console.log(err);
+        })
+});
 
 app.get('/about', (req, res) => {
     res.render('about', { title: 'About Us' });
