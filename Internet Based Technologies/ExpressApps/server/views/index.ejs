@@ -11,18 +11,20 @@
 
                 <% if(services.length> 0 ) { %>
                     <% services.forEach(service=> { %>
-                        <h1>
-                            <%= service.title %>
-                        </h1>
-                        <p>
-                            <%= service.descritpion %>
-                        </p>
-                        <p>
-                            <%= service.location %>
-                        </p>
-                        <p>
-                            <%= service.price %>
-                        </p>
+                        <a href="/catalog/<%= service._id %>">
+                            <h1>
+                                <%= service.title %>
+                            </h1>
+                            <p>
+                                <%= service.descritpion %>
+                            </p>
+                            <p>
+                                <%= service.location %>
+                            </p>
+                            <p>
+                                <%= service.price %>
+                            </p>
+                        </a>
 
                         <% }) %>
                             <% } else {%>

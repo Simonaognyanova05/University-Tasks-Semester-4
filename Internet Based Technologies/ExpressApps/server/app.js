@@ -81,6 +81,18 @@ app.post('/services', (req, res) => {
         })
 });
 
+app.get('/catalog/:id', (req, res) => {
+    const id = req.params.id;
+
+    Service.findById(id)
+        .then(result => {
+            res.render('details', { title: 'Product Details', service: result });
+        })
+        .catch(err => {
+            console.log(err);
+        })
+})
+
 app.get('/about', (req, res) => {
     res.render('about', { title: 'About Us' });
 });
