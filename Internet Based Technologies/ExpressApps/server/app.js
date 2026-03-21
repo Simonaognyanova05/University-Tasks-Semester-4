@@ -1,6 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const Service = require('./models/service');
+const serviceRouter = require('./routes/servicesRoute');
 
 const app = express();
 
@@ -59,51 +60,6 @@ app.get('/', (req, res) => {
     res.redirect('/services');
 });
 
-app.get('/services', (req, res) => {
-    Service.find().sort({ createdAt: -1 })
-        .then(result => {
-            res.render('index', { title: 'Services', services: result });
-        })
-        .catch(err => {
-            console.log(err);
-        })
-});
-
-app.post('/services', (req, res) => {
-    const service = new Service(req.body);
-
-    service.save()
-        .then(result => {
-            res.redirect('/services');
-        })
-        .catch(err => {
-            console.log(err);
-        })
-});
-
-app.get('/catalog/:id', (req, res) => {
-    const id = req.params.id;
-
-    Service.findById(id)
-        .then(result => {
-            res.render('details', { title: 'Product Details', service: result });
-        })
-        .catch(err => {
-            console.log(err);
-        })
-});
-
-app.delete('/catalog/:id', (req, res) => {
-    const id = req.params.id;
-
-    Service.findByIdAndDelete(id)
-        .then(result => {
-            res.json({ redirect: '/catalog' });
-        })
-        .catch(err => {
-            console.log(err);
-        })
-});
 
 app.get('/about', (req, res) => {
     res.render('about', { title: 'About Us' });
@@ -113,9 +69,7 @@ app.get('/about-us', (req, res) => {
     res.redirect('/about');
 });
 
-app.get('/blogs/create', (req, res) => {
-    res.render('create', { title: 'Create a new Blog' });
-});
+app.use('/services', serviceRouter);
 
 app.use((req, res) => {
     res.status(404).render('404', { title: '404' });

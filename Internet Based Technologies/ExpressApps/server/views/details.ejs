@@ -24,7 +24,7 @@
                     const trashkan = document.querySelector('a.delete');
 
                     trashkan.addEventListener('click', (e) => {
-                        const endpoint = `/catalog/${trashkan.dataset.doc}`;
+                        const endpoint = `/services/${trashkan.dataset.doc}`;
 
                         fetch(endpoint, {
                             method: 'DELETE'
