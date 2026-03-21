@@ -1,52 +1,32 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const Service = require('./models/service')
+const serviceController = require('./controllers/serviceController');
+const about = require('./controllers/aboutController');
+const contact = require('./controllers/contactController');
+const login = require('./controllers/loginController');
+const register = require('./controllers/registerController');
+
 
 const app = express();
 
 const dbURL = 'mongodb+srv://SimonaOgnyanova:123Simona2005@rent-hand.fcxtivy.mongodb.net/';
 mongoose.connect(dbURL);
 
-
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
+app.use(express.urlencoded({ extended: true }));
 
 app.listen(3000);
 
-app.get('/', (req, res) => {
-    res.render('home', { title: 'Home page' });
-});
+app.get('/', serviceController.service_index);
+app.get('/catalog', serviceController.service_catalog);
+app.get('/upload', serviceController.service_create_get);
+app.post('/services/upload', serviceController.service_create_post);
+app.get('/about', about);
+app.get('/contact', contact);
+app.get('/login', login);
+app.get('/register', register);
 
-app.get('/about', (req, res) => {
-    res.render('about', { title: 'About page' });
-});
-
-app.get('/catalog', (req, res) => {
-    Service.find().sort({ createdAt: -1 })
-        .then(result => {
-            const services = result.map(x => x.toJSON());
-            res.render('catalog', { title: 'Catalog page', services: services });
-        })
-        .catch(err => {
-            console.log(err);
-        })
-});
-
-app.get('/contact', (req, res) => {
-    res.render('contact', { title: 'Contact page' });
-});
-
-app.get('/login', (req, res) => {
-    res.render('login', { title: 'Login page' });
-});
-
-app.get('/register', (req, res) => {
-    res.render('register', { title: 'Register page' });
-});
-
-app.get('/upload', (req, res) => {
-    res.render('upload', { title: 'Upload page' });
-});
 
 app.use((req, res) => {
     res.status(404).render('404', { title: 'Not found' });
