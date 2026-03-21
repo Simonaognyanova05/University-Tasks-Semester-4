@@ -20,6 +20,7 @@ app.listen(3000);
 
 app.get('/', serviceController.service_index);
 app.get('/catalog', serviceController.service_catalog);
+app.get('/catalog/:id', serviceController.service_get_one);
 app.get('/upload', serviceController.service_create_get);
 app.post('/services/upload', serviceController.service_create_post);
 app.get('/about', about);

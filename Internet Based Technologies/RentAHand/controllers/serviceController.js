@@ -25,8 +25,20 @@ const service_create_post = (req, res) => {
     service.save()
         .then(result => {
             console.log(result);
-            
+
             res.redirect('/catalog');
+        })
+        .catch(err => {
+            console.log(err);
+        })
+};
+
+const service_get_one = (req, res) => {
+    const id = req.params.id;
+
+    Service.findById(id)
+        .then(result => {
+            res.render('details', { title: 'Details page', service: result });
         })
         .catch(err => {
             console.log(err);
@@ -38,4 +50,5 @@ module.exports = {
     service_catalog,
     service_create_get,
     service_create_post,
+    service_get_one
 }
