@@ -24,7 +24,8 @@ app.get('/about', (req, res) => {
 app.get('/catalog', (req, res) => {
     Service.find().sort({ createdAt: -1 })
         .then(result => {
-            res.render('catalog', { title: 'Catalog page', services: result });
+            const services = result.map(x => x.toJSON());
+            res.render('catalog', { title: 'Catalog page', services: services });
         })
         .catch(err => {
             console.log(err);
