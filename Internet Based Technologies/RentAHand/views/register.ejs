@@ -12,18 +12,22 @@
         <section class="form-page">
 
             <h2>Регистрация</h2>
+            <% if(error){ %>
+                <p class="error">
+                    <%= error %>
+                </p>
+                <% } %>
 
-            <form action="/register" method="post">
+                    <form action="/register" method="post">
 
-                <input type="text" placeholder="Име" name="username">
+                        <input type="text" placeholder="Име" name="username">
+                        <input type="email" placeholder="Имейл" name="email">
+                        <input type="password" placeholder="Парола" name="password">
+                        <input type="password" placeholder="Потвърдете паролата" name="rePass">
 
-                <input type="email" placeholder="Имейл" name="email">
+                        <button class="btn">Създай акаунт</button>
 
-                <input type="password" placeholder="Парола" name="password">
-
-                <button class="btn">Създай акаунт</button>
-
-            </form>
+                    </form>
 
         </section>
         <%- include('./partials/footer.ejs') %>
