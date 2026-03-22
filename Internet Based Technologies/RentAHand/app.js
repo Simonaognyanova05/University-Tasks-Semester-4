@@ -27,7 +27,9 @@ app.post('/services/upload', serviceController.service_create_post);
 app.get('/about', about);
 app.get('/contact', contact);
 app.get('/login', login);
-app.get('/register', register);
+app.get('/register', register.register_get);
+app.post('/register', register.register_post);
+
 
 
 app.use((req, res) => {
