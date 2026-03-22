@@ -49,9 +49,7 @@
                         <button class="btn">Свържи се</button>
                     </div>
 
-                    <button class="delete-btn" data-id="<%= service._id %>">
-                        🗑 Изтрий услугата
-                    </button>
+                    <a class="delete-btn" data-doc="<%= service._id %>">Delete</a>
 
                 </div>
 
@@ -62,23 +60,19 @@
         <%- include('./partials/footer.ejs') %>
 
             <script>
-                const btn = document.querySelector('.delete-btn');
+                const trashkan = document.querySelector('a.delete-btn');
 
-                btn.addEventListener('click', () => {
+                trashkan.addEventListener('click', (e) => {
+                    const endpoint = `/catalog/${trashkan.dataset.doc}`;
 
-                    if (!confirm('Сигурен ли си?')) return;
-
-                    const id = btn.dataset.id;
-
-                    fetch('/services/' + id, {
+                    fetch(endpoint, {
                         method: 'DELETE'
                     })
-                        .then(res => res.json())
-                        .then(data => {
-                            window.location.href = data.redirect;
-                        })
-                        .catch(err => console.log(err));
-                });
+                        .then(response => response.json())
+                        .then(data => window.location.href = data.redirect)
+                        .catch(e => console.log(e)
+                        )
+                })
             </script>
 
 </body>

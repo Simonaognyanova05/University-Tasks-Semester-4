@@ -45,10 +45,23 @@ const service_get_one = (req, res) => {
         })
 };
 
+const service_delete_one = (req, res) => {
+    const id = req.params.id;
+
+    Service.findByIdAndDelete(id)
+        .then(result => {
+            res.json({ redirect: '/catalog' });
+        })
+        .catch(err => {
+            console.log(err);
+        })
+};
+
 module.exports = {
     service_index,
     service_catalog,
     service_create_get,
     service_create_post,
-    service_get_one
+    service_get_one,
+    service_delete_one
 }
